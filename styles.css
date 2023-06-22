@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    display: inline-flex;
+}
+@media (max-width:600px) {
+    .navbar{
+        width: 100%;
+        right: 20%;
+    }
+    .scalar_img{
+        display: none;
+    }
+    nav{
+        position: relative;
+        width: 100%;
+        font-size: 0.6em;
+    }
+}
+.img{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+
+ nav ul{
+    position: relative;
+    display: flex;
+    gap: 7em;
+    justify-content: center;
+    top: 40%;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+ul .notify{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.sca_img{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+}
+.style{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: black;
+  /* border-top-left-radius: 200px; */
+}
+.login{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    border-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login > h1{
+    position: absolute;
+    top: 25%;
+}
+.login > .input{
+    position: absolute;
+    top: 40%;
+    border: 0px;
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+}
+.login > .input:hover{
+    transition: ease-in-out 0.5ms;
+    font-size: 2em;
+}
+.login > .input1{
+    position: absolute;
+    top: 50%;
+    font-size: 1.5em;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+.login > .input1:hover{
+    transition: ease-in-out 0.5ms;
+    font-size: 2em;
+}
+.login > .submit{
+    position: absolute;
+    top: 60%;
+    padding: 10px 30px 10px 30px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.login > .submit .in{
+    text-decoration: none;
+    color: white;
+}
+
+.style > .first{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-bottom-right-radius: 150px;
+}
+.style > .second{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 253, 253);
+    bottom: 0;
+    left: 62.4%;
+    border-top-left-radius: 180px;
+}
+.style > .thrid{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    bottom: 1.5%;
+    left: 65.5%;
+    border-top-left-radius: 130px;
+}
+
+.style > .box{
+    position: absolute;
+    width: 100px;
+    height: 250px;
+    bottom: 0;
+    left: 4px;
+    display: flex;
+    flex-direction: column;
+}
+ .boxes{
+    position: relative;
+    width: 40px;
+    height: 10px;
+    border: 1px solid #fff;
+    top: 30%;
+    left: 4px;
+    padding: 10px;
+    color: white;
+    transform: rotate(10px);
+}
+@media (max-width:600px) {
+    .main{
+        width: 100%;
+    }
+    .style{
+        display: none;
+    }
+    .login{
+        border: 1px solid black;
+    }
+}
+
+.notifybtn{
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: transparent;
+}

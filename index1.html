@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scalar page 2</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script>
+        function SubForm (){
+            $.ajax({
+                url:'https://api.apispreadsheets.com/data/410/',
+                type:'post',
+                data:$("#myForm").serializeArray(),
+                success: function(){
+                alert("Form Data Submitted :)")
+                },
+                error: function(){
+                alert("There was an error :(")
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="img">
+            <svg width="27" height="60" viewBox="0 0 27 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="scalar_img">
+                <path d="M0.558674 27.6781L25.659 0.808496L15.2459 28.4095L26.9413 32.8219L0.905332 59.3385L11.3184 31.7374L0.558674 27.6781Z" fill="#111111"/>
+                </svg>
+                <h2 class="sca">SCLR</h2>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="accounts.html">ACCOUNTS</a></li>
+                <li><a href="#" class="notify"><button class="notifybtn" onclick="notify()">NOTIFY</button></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+            <!-- <input type="text" id="name" name="name" placeholder="Name" />
+            <input type="text" id="phno" placeholder="Phone">
+            <input type="text" id="regnno" placeholder="Registration No.">
+            <input type="text" name="" class="hidden">
+            <input type="text" name="" class="hidden"> -->
+        <div id="ff-compose"></div>
+        <script async defer src="https://formfacade.com/include/113482429109161450985/form/1FAIpQLSfUZUUkZLHZpX4Vix7xhWksg_tgImqZZznn-gMASCY7AAzbmw/classic.js?div=ff-compose"></script>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
